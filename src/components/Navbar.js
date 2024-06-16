@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export class Navbar extends Component {
 
@@ -21,28 +22,31 @@ export class Navbar extends Component {
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
+          <Link className="nav-link active" aria-current="page" to="/entertainment">Home</Link>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link" href="/">General</a>
+          <Link className="nav-link" to="/">General</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">Business</a>
+          <Link className="nav-link"tof="/Business">Business</Link>
         </li>
         
         <li className="nav-item">
-          <a className="nav-link" href="/">Health</a>
+          <Link className="nav-link" to="/Health">Health</Link>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link" href="/">Science</a>
+          <Link className="nav-link" to="/Science">Science</Link>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link" href="/">Technology</a>
+          <Link className="nav-link" to="/Technology">Technology</Link>
         </li>
        
+        <li className="nav-item">
+          <Link className="nav-link" to="/entertainment">entertainment</Link>
+        </li>
         
         
         
