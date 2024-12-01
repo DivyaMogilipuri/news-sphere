@@ -44,39 +44,38 @@ export class App extends Component {
 
     <div>
       <LoadingBar
-        color='blue'
+        color='red'
         progress={this.state.progress}
         height={4}
         ></LoadingBar>
       
     </div>
   
-        {/* <Newscomponent category="entertainment" setprogress={this.setprogress} /> */}
         
   
       <Routes>
-        <Route exact path="/entertainment" element={
-        <Newscomponent category="entertainment" setprogress={this.setprogress} />}>
+        <Route exact path="/" element={
+        <Newscomponent category="general" key="genral" setprogress={this.setprogress} />}>
         </Route>
 
         <Route exact path="/Technology" element={
-        <Newscomponent category="Technology" setprogress={this.setprogress} />}>
+        <Newscomponent category="Technology"key="technology" setprogress={this.setprogress} />}>
         </Route>
 
         <Route exact path="/Business" element={
-        <Newscomponent category="Business" setprogress={this.setprogress} />}>
+        <Newscomponent category="Business" key="business" setprogress={this.setprogress} />}>
         </Route>
 
         <Route exact path="/Health" element={
-        <Newscomponent category="Health" setprogress={this.setprogress} />}>
+        <Newscomponent category="Health" key="health" setprogress={this.setprogress} />}>
         </Route>
 
-        <Route exact path="/entertainment" element={
-        <Newscomponent category="entertainment" setprogress={this.setprogress} />}>
+        <Route exact path="/Entertainment" element={
+        <Newscomponent category="Entertainment" setprogress={this.setprogress} />}>
         </Route>
 
         <Route exact path="/Science" element={
-        <Newscomponent category="Science" setprogress={this.setprogress} />}>
+        <Newscomponent category="Science" key="science" setprogress={this.setprogress} />}>
         </Route>
 
         
@@ -88,4 +87,3 @@ export class App extends Component {
 }
 
 export default App
-
